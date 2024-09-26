@@ -1,6 +1,6 @@
 {
   "name": "react-simple-input-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple input UIs with multiple variant of themes",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
