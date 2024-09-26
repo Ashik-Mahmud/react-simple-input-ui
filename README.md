@@ -17,8 +17,6 @@ Install the package via npm:
 npm install react-simple-input-ui
 ```
 
-````
-
 or using yarn:
 
 ```bash
@@ -71,4 +69,3 @@ Feel free to submit issues and pull requests. All contributions are welcome!
 ## License
 
 This project is licensed under the MIT License.
-````
