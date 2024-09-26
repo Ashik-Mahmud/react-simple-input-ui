@@ -1,8 +1,7 @@
 import React, { HTMLProps } from "react";
 import { SimpleInputProps } from "./types";
 
-type props = SimpleInputProps &
-  HTMLProps<HTMLInputElement | HTMLTextAreaElement>;
+type props = SimpleInputProps & HTMLProps<HTMLInputElement>;
 const Input = ({
   type,
   label,
