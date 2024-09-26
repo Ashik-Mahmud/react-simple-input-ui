@@ -1,6 +1,8 @@
-import React from "react";
-import { InputProps } from "./types";
+import React, { HTMLProps } from "react";
+import { SimpleInputProps } from "./types";
 
+type props = SimpleInputProps &
+  HTMLProps<HTMLInputElement | HTMLTextAreaElement>;
 const Input = ({
   type,
   label,
@@ -9,22 +11,43 @@ const Input = ({
   required,
   textareaRows,
   id,
-}: InputProps) => {
+  labelClass,
+  labelStyle,
+  InputWrapperClass,
+  InputWrapperStyle,
+  ...rest
+}: SimpleInputProps) => {
   return (
-    <div>
+    <div className={InputWrapperClass} style={InputWrapperStyle}>
       {type === "textarea" ? (
         <>
-          <label htmlFor={id}>{label}</label>
-          <textarea id={id} rows={textareaRows || 4}></textarea>
+          {label && (
+            <label className={labelClass} style={labelStyle} htmlFor={id}>
+              {label}
+            </label>
+          )}
+          <textarea
+            id={id}
+            rows={textareaRows || 4}
+            name={name}
+            placeholder={placeholder}
+            required={required}
+            {...rest}
+          ></textarea>
         </>
       ) : (
         <>
-          <label htmlFor={id}>{label}</label>
+          {label && (
+            <label className={labelClass} style={labelStyle} htmlFor={id}>
+              {label}
+            </label>
+          )}
           <input
             type={type}
             name={name}
             placeholder={placeholder}
             required={required}
+            {...rest}
           />
         </>
       )}
