@@ -1,15 +1,5 @@
 import React from "react";
-
-export type InputProps = {
-  label?: string;
-  type: string | "textarea";
-  name: string;
-  placeholder?: string;
-  required?: boolean;
-  theme: "beautiful" | "normal";
-  textareaRows?: number;
-  id?: string;
-};
+import { InputProps } from "./types";
 
 const Input = ({
   type,
