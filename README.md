@@ -1,6 +1,3 @@
-Here's a basic `README.md` template in markdown format for your npm package **react-simple-input-ui**:
-
-````markdown
 # react-simple-input-ui
 
 A simple and lightweight React component for handling input fields with minimal setup. Perfect for quick projects or when you need an easy-to-use input component.
@@ -19,6 +16,7 @@ Install the package via npm:
 ```bash
 npm install react-simple-input-ui
 ```
+
 ````
 
 or using yarn:
@@ -73,8 +71,4 @@ Feel free to submit issues and pull requests. All contributions are welcome!
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-This template should cover the basic details of your package, including installation, usage, and available props. Let me know if you need any modifications!
-```
+````
