@@ -15,7 +15,7 @@ const Input = ({
   InputWrapperClass,
   InputWrapperStyle,
   ...rest
-}: SimpleInputProps) => {
+}: props) => {
   return (
     <div className={InputWrapperClass} style={InputWrapperStyle}>
       {type === "textarea" ? (
@@ -31,7 +31,10 @@ const Input = ({
             name={name}
             placeholder={placeholder}
             required={required}
-            {...rest}
+            {...(rest as React.DetailedHTMLProps<
+              React.TextareaHTMLAttributes<HTMLTextAreaElement>,
+              HTMLTextAreaElement
+            >)}
           ></textarea>
         </>
       ) : (
