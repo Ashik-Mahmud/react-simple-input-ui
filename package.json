@@ -8,6 +8,10 @@
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ashik-Mahmud/react-simple-input-ui"
+  },
   "keywords": [
     "inputs",
     "simple-input",
